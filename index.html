@@ -2,10 +2,107 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title></title>
   </head>
-  <body>
+  <body class="no-margin">
+    <nav>
+      <div id="nav_logo"></div>
+      <ul id="nav_links" class="no-margin no-list-style">
+        <li><a href="#home" class="links no-text-decoration">Home</a></li>
+        <li><a href="#product" class="links no-text-decoration">Produit</a></li>
+        <li><a href="#store" class="links no-text-decoration">Boutique</a></li>
+        <li><a href="#contact" class="links no-text-decoration">Contact</a></li>
+      </ul>
+    </nav>
 
+    <section id="home">
+      <div id="home_article">
+        <h1 class="text_style_1">Rose Prevost, la fleuriste Boulonnaise</h1>
+        <p class="text_style_1">Une livraison de fleurs n’est jamais denuee de sens: message
+          d’amour ou d’amitie, elle est, avant tout, dictee par une
+          grande palette de sentiments et repose en grande partie sur le
+          professionnalisme de l’artisan fleuriste.
+          <br/>
+          Etre fleuriste, c’est servir toutes les occasions de la vie par
+          le biais de produits d’autant plus precieux qu’ils sont ephemeres.
+          Quel plus beau messager qu’une fleur pour transmettre les émotions?
+          <br/><br/>
+          Rose Prevost, fleuriste boulonnaise a la fois artiste et gestionnaire,
+          vous propose son savoir-faire en toute saison et en toutes
+          circonstances(bapteme, mariage, deces...), et vous prodiguera
+          le meilleur accueil et des conseils avises. <br/><br/>
+        </p>
+        <a href="#product" class="no-text-decoration"><p class="button">Produit</p></a>
+      </div>
+    </section>
+
+    <section id="product">
+      <h2 class="text_style_1 weight_bold">Nos meilleures compositions florales...</h2>
+      <div class="product_list">
+        <div class="product_box">
+          <img src="img/108120_standing.jpg.png" class="product_img"/>
+          <div class="product_details">
+            <h3 class="product_name text_style_1">Saphir</h3>
+            <p class="product_price">Prix: 0,00€</p>
+          </div>
+        </div>
+        <div class="product_box">
+          <img src="img/108144_standing.jpg.png" class="product_img"/>
+          <div class="product_details">
+            <h3 class="product_name text_style_1">Mojito</h3>
+            <p class="product_price">Prix: 0,00€</p>
+          </div>
+        </div>
+        <div class="product_box">
+          <img src="img/108243_standing.jpg.png" class="product_img"/>
+          <div class="product_details">
+            <h3 class="product_name text_style_1">Raina</h3>
+            <p class="product_price">Prix: 0,00€</p>
+          </div>
+        </div>
+        <div class="product_box">
+          <img src="img/108270_standing.jpg.png" class="product_img"/>
+          <div class="product_details">
+            <h3 class="product_name text_style_1">Sourire</h3>
+            <p class="product_price">Prix: 0,00€</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="store">
+      <div id="store_frame">
+        <h2 class="text_style_1">Notre boutique...</h2>
+        <p class="text_style_1">lorem ipsum</p>
+        <div id="icons">
+          <a href="https://www.instagram.com/?hl=fr" target="_blank"><div id="instagram_icon"></div></a>
+          <a href="https://twitter.com/" target="_blank"><div id="twitter_icon"></div></a>
+          <a href="https://fr-fr.facebook.com/" target="_blank"><div id="facebook_icon"></div></a>
+        </div>
+        <a href="mailto:rose-prevost@fleuriste-boulogne.fr" class="links">
+          rose-prevost@fleuriste-boulogne.fr
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div id="contact_frame">
+        <fieldset>
+          <legend class="text_style_1">Contactez-nous:</legend>
+          <label for="object" class="text_style_1">Sujet: </label>
+          <input type="text" name="object" id="object"/>
+          <label for="email" class="text_style_1">Votre mail: </label>
+          <input type="text" name="email" id="email"/>
+          <label for="content" class="text_style_1">Precisez votre demande: </label>
+          <textarea type="text" name="content" id="content"></textarea>
+        </fieldset>
+        <p class="mail_button">Envoyer</p>
+      </div>
+    </section>
+
+    <footer>
+      <p class="text_style_1-no_font no-margin">Copyright ©2017 GARENAUX Romain</p>
+    </footer>
   </body>
 </html>

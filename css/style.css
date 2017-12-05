@@ -1,0 +1,394 @@
+/* Body */
+body {
+  background-color: #111;
+}
+
+/* Nav */
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  background: radial-gradient(#444, #111);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#nav_logo {
+  width: 40%;
+  height: 100%;
+  background: url("../img/logo2b.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#nav_links {
+  width: 50%;
+  padding-top: 1em;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Section Home */
+#home {
+  width: 100%;
+  height: 34em;
+  background: url("../img/water-water-hippy-flower-crown.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.75) inset,
+    0px -8px 4px rgba(0, 0, 0, 0.75) inset;
+
+  -webkit-filter: blur(1px) brightness(1) hue-rotate(20deg);
+  -moz-filter: blur(1px) brightness(1) hue-rotate(20deg);
+  -o-filter: blur(1px) brightness(1) hue-rotate(20deg);
+  -ms-filter: blur(1px) brightness(1) hue-rotate(20deg);
+
+  filter: blur(1px) brightness(1) hue-rotate(20deg);
+
+  transition-property: filter;
+  transition-duration: 0.75s;
+}
+
+#home:hover {
+  -webkit-filter: blur(0px) brightness(1.1) hue-rotate(0deg);
+  -moz-filter: blur(0px) brightness(1.1) hue-rotate(0deg);
+  -o-filter: blur(0px) brightness(1.1) hue-rotate(0deg);
+  -ms-filter: blur(0px) brightness(1.1) hue-rotate(0deg);
+
+  filter: blur(0px) brightness(1.1) hue-rotate(0deg);
+}
+
+#home_article {
+  width: 520px;
+  height: 70px;
+  position: relative;
+  top: 6em;
+  left: 2em;
+  text-align: justify;
+  padding: 0px 8px 0px 8px;
+  overflow: hidden;
+  background-color: rgba(48, 48, 48, 0.75);
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.75);
+
+  transition-property: width, height;
+  transition-duration: 0.4s;
+}
+
+#home_article:hover {
+  width: 750px;
+  height: 410px;
+}
+
+.button {
+  /*Button*/
+  width: 200px;
+  height: 43px;
+  margin-left: 25%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  background-color: #555;
+  background: radial-gradient(#666, #333);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75),
+    -2px -2px 4px rgba(255, 255, 255, 0.4) inset,
+    2px 2px 4px rgba(0, 0, 0, 0.4) inset;
+  /*Text*/
+  font-size: 24px;
+  padding-top: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75),
+    -1px -1px 2px rgba(255, 255, 255, 0.5);
+
+    transition-property: background, color;
+    transition-duration: 0.5s;
+}
+
+.button:hover {
+  color: #FFF;
+  background-color: #777;
+  background: radial-gradient(#888, #555);
+}
+
+/* Section Product */
+#product {
+  width: 100%;
+  height: 40em;
+  background-color: #333;
+  background: linear-gradient(#444, #111);
+  /*background-image: url("../img/cherry-flowers.png");*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product_box {
+  width: 256px;
+  height: 320px;
+  margin: 28px;
+  background-color: rgba(50, 50, 40, 0.5);
+  background: linear-gradient(#333, #444);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75),
+    -2px -2px 4px rgba(255, 255, 255, 0.25);
+}
+
+.product_box:hover {
+  width: 260px;
+  margin: 30px;
+  background-color: rgba(100, 100, 80, 0.5);
+  background: linear-gradient(#444, #555);
+}
+
+.product_img {
+  width: 206px;
+  height: 206px;
+  position: relative;
+  left: 25px;
+  top: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.75),
+    2px 2px 4px rgba(255, 255, 255, 0.25);
+}
+
+.product_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product_name {
+  margin-left: 25px;
+  margin-top: 50px;
+}
+
+.product_price {
+  /*Button*/
+  width: 100px;
+  height: 24px;
+  margin-right: 18px;
+  margin-top: 50px;
+  border: 1px solid #000;
+  background-color: #555;
+  background: radial-gradient(#666, #333);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75),
+    -2px -2px 4px rgba(255, 255, 255, 0.4) inset,
+    2px 2px 4px rgba(0, 0, 0, 0.4) inset;
+  /*Text*/
+  text-align: center;
+  font-size: 12px;
+  padding-top: 12px;
+  font-weight: bold;
+
+  transition-property: background, color;
+  transition-duration: 0.5s;
+}
+
+.product_price:hover {
+  color: #FFF;
+  background-color: #777;
+  background: radial-gradient(#888, #555);
+}
+
+/* Section Store */
+#store {
+  width: 100%;
+  height: 40em;
+  background: url("../img/pots-with-basil-in-garden.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.75) inset,
+    0px -8px 4px rgba(0, 0, 0, 0.75) inset;
+}
+
+#store_frame {
+  width: 600px;
+  height: 410px;
+  position: relative;
+  top: 12em;
+  left: 40em;
+  text-align: justify;
+  padding: 1px 8px 0px 8px;
+  background-color: rgba(48, 48, 48, 0.75);
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.75);
+}
+
+#icons {
+  width: 136px;
+  height: 48px;
+  border-radius: 10px;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.75),
+    2px 2px 4px rgba(255, 255, 255, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFF;
+}
+
+#facebook_icon {
+  width: 40px;
+  height: 40px;
+  background: url("../img/facebookicon.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#instagram_icon {
+  width: 40px;
+  height: 40px;
+  background: url("../img/instagramicon.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#twitter_icon {
+  width: 40px;
+  height: 40px;
+  background: url("../img/twittericon.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Section Contact */
+#contact {
+  width: 100%;
+  height: 38em;
+  background-color: #333;
+  background: linear-gradient(#111, #444);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -8px 4px rgba(0, 0, 0, 0.75) inset;
+}
+
+#contact_frame {
+  width: 600px;
+  height: 410px;
+  background-color: rgba(50, 50, 40, 0.5);
+  background: linear-gradient(#444, #333);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75),
+    -2px -2px 4px rgba(255, 255, 255, 0.25);
+}
+
+#object {
+  width: 560px;
+}
+
+#email {
+  width: 560px;
+}
+
+#content {
+  width: 560px;
+  height: 180px;
+  word-wrap: break-word;
+}
+
+.mail_button {
+  /*Button*/
+  width: 100px;
+  height: 24px;
+  margin-left: 480px;
+  margin-top: 0px;
+  border: 1px solid #000;
+  background-color: #555;
+  background: radial-gradient(#666, #333);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75),
+    -2px -2px 4px rgba(255, 255, 255, 0.4) inset,
+    2px 2px 4px rgba(0, 0, 0, 0.4) inset;
+  /*Text*/
+  text-align: center;
+  font-size: 12px;
+  padding-top: 12px;
+  font-weight: bold;
+
+  transition-property: background, color;
+  transition-duration: 0.5s;
+}
+
+.mail_button:hover {
+  color: #FFF;
+  background-color: #777;
+  background: radial-gradient(#888, #555);
+}
+
+/* Footer */
+footer{
+  width: 100%;
+  height: 2em;
+  background-color: #333;
+  background: radial-gradient(#444, #111);
+  font-size: 12px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+/* Style */
+fieldset {
+  border: none;
+}
+
+@font-face {
+  font-family: 'Bungasai';
+  src: url('../fonts/Bungasai.ttf') ;
+}
+
+.links {
+  font-family: Bungasai;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75),
+    -1px -1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.text_style_1 {
+  font-family: Bungasai;
+  color: #FFF;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75),
+    -1px -1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.text_style_1-no_font {
+  color: #FFF;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75),
+    -1px -1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.weight_bold {
+  font-weight: bold;
+}
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
