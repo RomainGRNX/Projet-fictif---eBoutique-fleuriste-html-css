@@ -298,9 +298,10 @@ nav {
 }
 
 #content {
-  width: 560px;
+  width: 570px;
   height: 180px;
   word-wrap: break-word;
+  resize: none;
 }
 
 .mail_button {
@@ -338,8 +339,10 @@ footer{
   background-color: #333;
   background: radial-gradient(#444, #111);
   font-size: 12px;
-  padding-top: 10px;
-  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Style */
